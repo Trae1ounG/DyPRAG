@@ -6,6 +6,7 @@ import argparse
 import torch
 import random
 from tqdm import tqdm
+import time
 from peft import PeftModel, LoraConfig, TaskType, get_peft_model
 import prompt_template
 from root_dir_path import ROOT_DIR
@@ -189,7 +190,7 @@ def main(args):
     )
     print(f"initialize projector with {args.projector_p} hidden layers")
     # Initialize projector
-    projector = ModuleProjector(
+    projector = ParameterTranslator(
         ["down_proj", "up_proj", "gate_proj"],
         list(range(model.config.num_hidden_layers)),
         model.config.hidden_size,
