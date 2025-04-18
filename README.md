@@ -16,6 +16,12 @@
 <!-- </p> -->
 Official implementation of "<a href="https://arxiv.org/abs/2503.23895">Better wit than wealth: Dynamic Parametric Retrieval Augmented Generation for Test-time Knowledge Enhancement</a>" paper.
 
+## 💥News💥
+
+* 🔥🔥🔥[**Apr 18, 2025**] We release the parameter translator weights of LLama3.2-1B and Qwen2.5-1.5B (Others will coming soon) at <a href="https://drive.google.com/drive/folders/1FLu3_rMcAMaXfQKQSqf6nALhBv841-ko?usp=drive_link">here</a>!
+* 🔥🔥🔥[**Mar 31, 2025**] Our paper <a href="https://arxiv.org/abs/2503.23895">Better wit than wealth: Dynamic Parametric Retrieval Augmented Generation for Test-time Knowledge Enhancement</a>" is available at [arxiv](https://arxiv.org/abs/2503.23895) !
+* 🔥🔥🔥[**Mar 26, 2025**] The code of Dynammic Parametric RAG is open-source at [DyPRAG](https://github.com/Trae1ounG/DyPRAG)!
+
 ## Overview
 ![Overall Comparison](assets/intro.png)
 Overview of Dynamic Parametric RAG:
@@ -229,6 +235,8 @@ python3 -u src/train_dyprag.py \
 | `dyprag_train_epochs` | training epochs in stage 2 |
 
 The well-trained parameter translator $\mathcal{F}^\prime_\phi$ will be saved in `projector/f'{args.model_name}_hidden{args.projector_p}_sample{args.sample_rate}_lr{args.dyprag_learning_rate}` folder.
+
+
 ### Stage 3: DyPRAG Inference
 ```
 python3 src/inference_dyprag.py \
@@ -254,6 +262,7 @@ python3 src/inference_dyprag.py \
 | `projector_p` | intermediate size of parameter translator |
 
 You can use similar command to inference RAGTruth with `--data_type="QA"`.
+> We have released the parameter translator weights of LLama3.2-1B and Qwen2.5-1.5B (Others will coming soon) at <a href="https://drive.google.com/drive/folders/1FLu3_rMcAMaXfQKQSqf6nALhBv841-ko?usp=drive_link">here</a>, your can download and run inference.
 
 #### RAGTruth Evaluation
 ```
