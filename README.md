@@ -14,12 +14,12 @@
 <img src="assets/github_new.jpg" width="40%"> 
 </div>
 <!-- </p> -->
-Official implementation of "<a href="https://arxiv.org/abs/2503.23895">Better wit than wealth: Dynamic Parametric Retrieval Augmented Generation for Test-time Knowledge Enhancement</a>" paper.
+Official implementation of "<a href="https://arxiv.org/abs/2503.23895">Dynamic Parametric Retrieval Augmented Generation for Test-time Knowledge Enhancement</a>" paper.
 
 ## 💥News💥
-
+* 🔥🔥🔥[**May 2, 2025**] We update <a href="https://arxiv.org/abs/2503.23895">Dynamic Parametric Retrieval Augmented Generation for Test-time Knowledge Enhancement</a>". **(1) Add vanilla LLM baseline, (2) Fix some errors, (3) Re-plot the main figure, (4) Add some interpretability experiments**!! Please feel free to check the updated version! Thanks for all your suggestions.
 * 🔥🔥🔥[**Apr 18, 2025**] We release the parameter translator weights of LLama3.2-1B and Qwen2.5-1.5B (Others will coming soon) at <a href="https://drive.google.com/drive/folders/1FLu3_rMcAMaXfQKQSqf6nALhBv841-ko?usp=drive_link">here</a>!
-* 🔥🔥🔥[**Mar 31, 2025**] Our paper <a href="https://arxiv.org/abs/2503.23895">Better wit than wealth: Dynamic Parametric Retrieval Augmented Generation for Test-time Knowledge Enhancement</a>" is available at [arxiv](https://arxiv.org/abs/2503.23895) !
+* 🔥🔥🔥[**Mar 31, 2025**] Our paper <a href="https://arxiv.org/abs/2503.23895">Dynamic Parametric Retrieval Augmented Generation for Test-time Knowledge Enhancement</a>" is available at [arxiv](https://arxiv.org/abs/2503.23895) !
 * 🔥🔥🔥[**Mar 26, 2025**] The code of Dynammic Parametric RAG is open-source at [DyPRAG](https://github.com/Trae1ounG/DyPRAG)!
 
 ## Overview
@@ -32,11 +32,11 @@ Overview of Dynamic Parametric RAG:
 - DyPRAG <font color="red">**dynamically integrates parameterized knowledge to resolve conflicts between contextual and parametric knowledge**</font>, offering a practical solution to <font color="red">**mitigate RAG hallucination**</font> in real-world applications.
 - DyPRAG-Combine is a <font color="red">**novel powerful RAG paradigm that combines contextual knowledge with parametric knowledge enable LLMs to better manipulate knowledge and reduce hallucination.**</font>
 
-|Method|Inference Cost|Training Cost|Storage Cost|Generalization|RAG Hallucination|
+<!-- |Method|Inference Cost|Training Cost|Storage Cost|Generalization|RAG Hallucination|
 |---|---|---|---|---|---|
 |RAG|🥶|🤓|🤓|🤓|🥶|
 |PRAG|🤓|🥶|🥶|🥶|😳|
-|DyPRAG (ours)|🤓|😳|🤓|🤓|🤓|
+|DyPRAG (ours)|🤓|😳|🤓|🤓|🤓| -->
 
 
 ![Overall Method](assets/method.png)
