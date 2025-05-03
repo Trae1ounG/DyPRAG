@@ -17,6 +17,7 @@
 Official implementation of "<a href="https://arxiv.org/abs/2503.23895">Dynamic Parametric Retrieval Augmented Generation for Test-time Knowledge Enhancement</a>" paper.
 
 ## 💥News💥
+* 🔥🔥🔥[**May 3, 2025**] You can try the deepwiki of DyPRAG in https://deepwiki.com/Trae1ounG/DyPRAG! 
 * 🔥🔥🔥[**May 2, 2025**] We update <a href="https://arxiv.org/abs/2503.23895">Dynamic Parametric Retrieval Augmented Generation for Test-time Knowledge Enhancement</a>". **(1) Add vanilla LLM baseline, (2) Fix some errors, (3) Re-plot the main figure, (4) Add some interpretability experiments**!! Please feel free to check the updated version! Thanks for all your suggestions.
 * 🔥🔥🔥[**Apr 18, 2025**] We release the parameter translator weights of LLama3.2-1B and Qwen2.5-1.5B (Others will coming soon) at <a href="https://drive.google.com/drive/folders/1FLu3_rMcAMaXfQKQSqf6nALhBv841-ko?usp=drive_link">here</a>!
 * 🔥🔥🔥[**Mar 31, 2025**] Our paper <a href="https://arxiv.org/abs/2503.23895">Dynamic Parametric Retrieval Augmented Generation for Test-time Knowledge Enhancement</a>" is available at [arxiv](https://arxiv.org/abs/2503.23895) !
