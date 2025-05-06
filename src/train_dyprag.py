@@ -63,7 +63,7 @@ def prepare_training_data_multi_datasets(args, tokenizer, datasets):
             num_train_epochs = 1
         projector = True
 
-        data_list = load_data(dataset_name, args.data_type, args.augment_model, projector, data_dir="./data_aug_projector")
+        data_list = load_data(dataset_name, None, args.augment_model, projector, data_dir="./data_aug_projector")
         for filename, fulldata in data_list:
             filename = filename.split(".")[0]
             print(f"Collecting data from {filename}")
