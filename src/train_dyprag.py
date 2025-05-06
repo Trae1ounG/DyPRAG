@@ -273,6 +273,7 @@ if __name__ == "__main__":
     parser.add_argument("--sample_rate", type=float, default=0.2)
     parser.add_argument("--dyprag_learning_rate", type=float, default=1e-5)
     parser.add_argument("--projector_p", type=int, default=32)
+    parser.add_argument("--augment_model", type=str, default=None)
     args = parser.parse_args()
     
     assert args.lora_rank and args.lora_alpha, "No Config for LoRA"
