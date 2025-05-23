@@ -282,8 +282,8 @@ python -u ./src/evaluate_ragtruth.py \
 ## Citation
 If you find our work useful in your research and would like to cite our project, please use the following citation:
 ```
-@article{tan2025better,
-  title={Better wit than wealth: Dynamic Parametric Retrieval Augmented Generation for Test-time Knowledge Enhancement},
+@article{tan2025dynamic,
+  title={Dynamic Parametric Retrieval Augmented Generation for Test-time Knowledge Enhancement},
   author={Tan, Yuqiao and He, Shizhu and Liao, Huanxuan and Zhao, Jun and Liu, Kang},
   journal={arXiv preprint arXiv:2503.23895},
   year={2025}
