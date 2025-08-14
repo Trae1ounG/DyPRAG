@@ -6,6 +6,7 @@ import argparse
 import torch
 import random
 from tqdm import tqdm
+import time
 from peft import PeftModel, LoraConfig, TaskType, get_peft_model
 import prompt_template
 from root_dir_path import ROOT_DIR
@@ -62,7 +63,7 @@ def prepare_training_data_multi_datasets(args, tokenizer, datasets):
             num_train_epochs = 1
         projector = True
 
-        data_list = load_data(dataset_name, args.data_type, args.augment_model, projector, data_dir="./data_aug_projector")
+        data_list = load_data(dataset_name, None, args.augment_model, projector, data_dir="./data_aug_projector")
         for filename, fulldata in data_list:
             filename = filename.split(".")[0]
             print(f"Collecting data from {filename}")
@@ -189,7 +190,7 @@ def main(args):
     )
     print(f"initialize projector with {args.projector_p} hidden layers")
     # Initialize projector
-    projector = ModuleProjector(
+    projector = ParameterTranslator(
         ["down_proj", "up_proj", "gate_proj"],
         list(range(model.config.num_hidden_layers)),
         model.config.hidden_size,
@@ -272,6 +273,7 @@ if __name__ == "__main__":
     parser.add_argument("--sample_rate", type=float, default=0.2)
     parser.add_argument("--dyprag_learning_rate", type=float, default=1e-5)
     parser.add_argument("--projector_p", type=int, default=32)
+    parser.add_argument("--augment_model", type=str, default=None)
     args = parser.parse_args()
     
     assert args.lora_rank and args.lora_alpha, "No Config for LoRA"
